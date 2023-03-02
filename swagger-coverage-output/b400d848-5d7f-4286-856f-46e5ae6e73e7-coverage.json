@@ -1,0 +1,27 @@
+{
+  "swagger" : "2.0",
+  "host" : "petstore.swagger.io",
+  "schemes" : [ "https" ],
+  "consumes" : [ null ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/v2/user/{username}" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "username",
+          "in" : "path",
+          "required" : true,
+          "x-example" : "admin"
+        }, {
+          "name" : "Accept",
+          "in" : "header",
+          "required" : false,
+          "x-example" : "*/*"
+        } ],
+        "responses" : {
+          "200" : { }
+        }
+      }
+    }
+  }
+}
